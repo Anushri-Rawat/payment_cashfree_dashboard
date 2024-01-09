@@ -5,7 +5,7 @@ import { FaBullhorn } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-col justify-center md:flex-row md:justify-between md:items-center bg-white border-b-2 px-5 py-3 w-full">
+    <div className="flex flex-col justify-center md:flex-row md:justify-between md:items-center bg-white border-b-2 px-3 md:px-5 py-3 w-full">
       <div className="flex flex-row">
         <div className="px-2 text-[15px] font-normal text-gray-700">
           Payments

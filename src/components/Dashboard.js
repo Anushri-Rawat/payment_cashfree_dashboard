@@ -6,7 +6,7 @@ import DashboardCard from "./DashboardCard";
 
 const Dashboard = () => {
   return (
-    <div className="p-6">
+    <div className="p-3 md:p-6">
       <div className=" flex justify-between">
         <p className="text-[20px] font-medium text-[#1A181E]">Overview</p>
         <select className="flex justify-between px-2 focus:outline-none rounded text-sm">
@@ -14,14 +14,14 @@ const Dashboard = () => {
           <option>Last Year</option>
         </select>
       </div>
-      <div className="flex flex-col md:flex-row justify-between md:gap-4 my-3">
+      <div className="flex flex-col md:flex-row justify-between gap-4 my-3">
         <DashboardCard title={"Online Orders"} value={"231"} />
         <DashboardCard title={"Amount Received"} value={"₹ 23,92,312.13"} />
       </div>
       <div className="text-lg font-medium text-[#1A181E] my-3">
         Transactions | This Month
       </div>
-      <div className="bg-white p-3">
+      <div className="bg-white md:p-3">
         <div className="flex justify-between">
           <div className="w-[250px] relative flex items-center text-[14px] ">
             <FaSearch className="absolute left-2 text-gray-300" />
@@ -41,7 +41,9 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="flex flex-col my-2">
-          <Table />
+          <div className="overflow-x-scroll">
+            <Table />
+          </div>
         </div>
       </div>
     </div>

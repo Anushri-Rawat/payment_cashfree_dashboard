@@ -11,7 +11,7 @@ const Table = () => {
         <tr className="bg-[#F2F2F2] text-gray-600">
           <th
             scope="col"
-            className="px-3 py-3 text-start text-sm font-medium w-1/4"
+            className="px-3 py-3 text-start text-sm font-medium w-1/4 whitespace-nowrap"
           >
             Order ID
           </th>
@@ -19,12 +19,12 @@ const Table = () => {
             scope="col"
             className="px-6 py-3 text-start text-sm font-medium flex items-center gap-1"
           >
-            <span>Order date</span>
+            <span className="whitespace-nowrap">Order date</span>
             <FaCaretDown />
           </th>
           <th
             scope="col"
-            className="px-3 py-3text-sm font-medium w-1/4 text-right"
+            className="px-3 py-3 text-sm font-medium w-1/4 text-right whitespace-nowrap"
           >
             Order amount
           </th>
@@ -32,7 +32,7 @@ const Table = () => {
             scope="col"
             className="px-6 py-3 text-sm font-medium flex items-center gap-1 justify-end"
           >
-            Transaction fees
+            <span className="whitespace-nowrap">Transaction fees</span>
             <IoIosInformationCircleOutline />
           </th>
         </tr>
